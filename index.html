@@ -5,10 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
 </head>
 
 <body>
 
+    <header>
+        <div class="heading container w-25 rounded-3 h1 text-center text-white bg-primary p-2 my-2">REGISTRATION</div>
+    </header>
+    <main>
+        <div class="main-container container-fluid">
+            <div class="accordion" id="registrationForm">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="studentDetails">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#studentDetailsBody" aria-expanded="true" aria-controls="studentDetailsBody">
+                            <span><b>STUDENT DETAILS</b></span>
+                        </button>
+                    </h2>
+                    <div id="studentDetailsBody" class="accordion-collapse collapse show" aria-labelledby="studentDetails"
+                        data-bs-parent="#registrationForm">
+                        <div class="accordion-body">
+                            <div class="studentDetailsFormContainer w-50 container">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="studentName" class="form-label">Student Name </label>
+                                        <input type="text" class="form-control" id="studentName">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="studentRollNo" class="form-label">Roll No</label>
+                                        <input type="text" class="form-control" id="studentRollNo">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="studentEmail" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="studentEmail">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="hostelDetails">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#hostelDetailsBody" aria-expanded="true" aria-controls="hostelDetailsBody">
+                            <span><b>HOSTEL DETAILS</b></span>
+                        </button>
+                    </h2>
+                    <div id="hostelDetailsBody" class="accordion-collapse collapse" aria-labelledby="hostelDetails"
+                        data-bs-parent="#registrationForm">
+                        <div class="accordion-body">
+                            <div class="hostelDetailsFormContainer w-50 container">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="hostelName" class="form-label">Hostel Name </label>
+                                        <input type="text" class="form-control" id="hostelName">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="hostelRoomNo" class="form-label">Room No</label>
+                                        <input type="text" class="form-control" id="hostelRoomNo">
+                                    </div>
+                                    <div class="mb-3 container w-50 my-2">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="hostelRoomMateName" class="form-label">ROOMMATE NAME</label>
+                                                <input type="text" class="form-control" id="hostelRoomMateName">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="hostelRoomRollNo" class="form-label">ROLL NO</label>
+                                                <input type="text" class="form-control" id="hostelRoomRollNo"
+                                                    placeholder="roommate's roll no">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary" id="addRoommateDetails"><i
+                                                    class="bi bi-plus-lg"></i></button>
+                                        </form>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <!-- Start of Scripts here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    
+    <!-- End of Scripts here -->
 </body>
 
 </html>
